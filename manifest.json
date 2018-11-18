@@ -1,0 +1,16 @@
+{
+    "name": "Rarbg Imdb Rating Finder",
+    "version": "1.0",
+    "description": "Highlights movie with rating more than equal of specified by user",
+    
+    "content_scripts": [
+        {
+          "matches": ["*://rarbgprx.org/*",
+            "*://rarbgprx.org/torrents.php*"],
+          "run_at": "document_end",
+          "js": ["contentScript.js"]
+        }
+      ],
+       
+      "manifest_version": 2
+}
